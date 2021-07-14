@@ -5,7 +5,7 @@ $account = $_POST["account"];
 $email = $_POST["email"];
 $time = $_POST["time"];
 $bankid = $_POST["bankid"];
-$bankname	 = $_POST["bankname"];
+$bankname	= $_POST["bankname"];
 $bank = $_POST["bank"];
 
 header("Content-type: text/html; charset=utf-8");
