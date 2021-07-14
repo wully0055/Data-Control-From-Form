@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>上傳銀行資料</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+</head>
+<body>
+  <h1 style="text-align:center"><font size="6">- 上傳銀行資料 -</font></h1> 
+  <div class="row">
+    <div class="col-8 offset-2">
+      <form method="post" enctype="multipart/form-data" action="update.php">
+      <!--<form  id="myform">  -->
+        <div class="form-group mt-5">
+          <label for="exampleFormControlInput1">使用者名稱</label>
+          <input id="exampleFormControlInput1" class="form-control" type="text" name="name" required="required">
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlSelect2">銀行代碼</label>
+          <input id="exampleFormControlSelect2" class="form-control" type="text" name="bankid" required="required">
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlSelect3">戶名</label>
+          <input id="exampleFormControlSelect3" class="form-control" type="text" name="bankname" required="required">
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlSelect4">銀行帳戶</label>
+          <input id="exampleFormControlSelect4" class="form-control" type="text" name="bank" required="required">
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlSelect5">填寫日期</label>
+          <input id="exampleFormControlSelect5" class="form-control" type="date" name="time" required="required">
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlSelect6">信箱</label>
+          <input id="exampleFormControlSelect6" class="form-control" type="email" name="email" required="required">
+        </div>
+        <div class="form-group mb-5">
+          <label for="exampleFormControlSelect7">上傳檔案</label>
+          <input id="exampleFormControlSelect7" class="form-control-file" type="file" required="required" name="my_file" multiple>
+        </div>
+        <input class="btn btn-success form-control col-12" type="submit" value="送 出">        
+      </form>      
+    </div>   
+  </div>  
+</body>
+</html> 
+
+
+
+
+    
